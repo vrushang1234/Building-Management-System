@@ -8,7 +8,7 @@ A Raspberry Pi-based Building Management System that integrates multiple sensors
 
 ## Features
 
-- **Temperature-controlled HVAC** - Automatically switches AC or Heater on/off based on the difference between desired and ambient temperature (threshold: ±3°F)
+- **Temperature-controlled HVAC** - Automatically switches AC or Heater on/off based on the difference between desired and ambient temperature (threshold: difference of 3°F)
 - **Fire alarm system** - Triggers a flashing LED alert and "FIRE ALERT / EVACUATE" message on LCD when weather index exceeds 95
 - **Motion-based lighting** - PIR sensor turns on a light LED when motion is detected; auto-off after 10 seconds of no motion
 - **Password-protected door** - 3-bit binary password entered via LEDs/buttons; password changes daily based on the day of the week (Monday=1, Tuesday=2, etc.)
@@ -86,9 +86,9 @@ Three buttons toggle three LEDs that represent bits of a 3-bit binary number. Th
 ### Threading Model
 
 The system runs three concurrent threads:
-1. **`lcd_update_task`** — Fetches weather data via async loop and updates the LCD every 5 seconds
-2. **`button_thread_func`** — Handles all button GPIO interrupts with 200ms debounce
-3. **`pir_sensor_thread`** — Polls PIR sensor every second and manages motion LED
+1. **`lcd_update_task`** - Fetches weather data via async loop and updates the LCD every 5 seconds
+2. **`button_thread_func`** - Handles all button GPIO interrupts with 200ms debounce
+3. **`pir_sensor_thread`** - Polls PIR sensor every second and manages motion LED
 
 ## Running the System
 
