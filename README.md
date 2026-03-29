@@ -4,7 +4,7 @@
 
 A Raspberry Pi-based Building Management System that integrates multiple sensors and components to monitor and control environmental conditions. The system displays real-time data on a 16x2 LCD including temperature, HVAC status, door status, motion-detected lighting status, and current time.
 
-![Picture of the Circuit]([https://example.com](https://github.com/vrushang1234/Building-Management-System/blob/main/circuit-picture.png))
+![Picture of the Circuit](https://github.com/vrushang1234/Building-Management-System/blob/main/circuit-picture.png)
 
 ## Features
 
