@@ -1,4 +1,4 @@
-# EECS 113 - Project 5: Building Management System
+# Building Management System
 
 ## Overview
 
